@@ -2,7 +2,8 @@
 
 ||Qué|Cómo|
 |:-:|:-:|:-:|
-<sub>Exámenes generados a partir del código de cada estudiante, extraído de sus PRs excepto en los estudiantes que no han realizado ninguna entrega.|<sub>Elija y responda de las preguntas que tiene disponibles, las cinco que presenten los errores o escenarios más cuestionables.|<sub>Las respuestas y justificaciones deben estar **exquisitamente relacionadas** a lo debatido en clase y hacer uso del vocabulario y los términos y criterios aprendidos
+|<sub>Exámenes generados a partir del código de cada estudiante, extraído de sus PRs excepto en los estudiantes que no han realizado ninguna entrega.|<sub>Elija y responda de las preguntas que tiene disponibles, las cinco que presenten los errores o escenarios más cuestionables.|<sub>Las respuestas y justificaciones deben estar **exquisitamente relacionadas** a lo debatido en clase y hacer uso del vocabulario y los términos y criterios aprendidos
+|||<sub>La respuesta debe desarrollarse en el documento markdown correspondiente y, una vez concluido, envíar como un pull request a la rama main de este repo.</sub>
 
 **Criterios de evaluación:**
 
