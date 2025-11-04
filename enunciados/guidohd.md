@@ -32,6 +32,23 @@ final String TEJADO = "               __/\\__\n" +
 
 ¿Qué observas en este código?
 
+
+
+ERROR: he utilizado "\n" para hacer el salto de línea.
+En clase hemos utilizado println(); siendo "ln" el salto de línea.
+
+CORRECCIÓN: 
+
+final String PUNTA_TEJADO = "               __/\\__";
+final String MEDIO_TEJADO = "  |    |    |  |####|  |    |    |  ";
+final String BASE_TEJADO = "====================================";
+
+final String TEJADO = PUNTA_TEJADO + MEDIO_TEJADO + BASE_TEJADO;
+
+
+
+
+
 ---
 
 ## Pregunta 2
@@ -45,6 +62,23 @@ for (int dia = 1; dia <= DIAS; dia++) {
     }
 }
 ```
+
+ERROR:
+He utilizado "dia++" para añadir 1 a la variable "dia".
+He fallado en lo mismo con la variable "hora".
+Lo que tendría que haber utilizado sería la expresión "a = + 1"
+
+
+CORRECCIÓN:
+
+for (int dia = 1; dia <= DIAS; dia = dia + 1) {
+    for (int hora = 0; hora < HORAS_POR_DIA; hora = hora + 1) {
+        // ...
+    }
+}
+
+
+
 
 ¿Qué observas en este código?
 
@@ -80,6 +114,23 @@ if (persiana_abierta) {
 ```
 
 ¿Qué observas en este código?
+
+ERROR:
+He escrito las variables en formato snake case (aaa_aaa) en vez de en camel case (aaaAaa) como hemos estado viendo en clase.
+
+CORRECCIÓN:
+
+boolean persianaAbierta = Math.random() < PROBABILIDAD_PERSIANA_ABIERTA;
+boolean luzEncendida = Math.random() < PROBABILIDAD_LUZ_ENCENDIDA;
+if (persianaAbierta) {
+    fila += PERSIANA_ABIERTA;
+} else {
+    fila += (luzEncendida ? LUZ_ENCENDIDA : LUZ_APAGADA);
+}
+
+
+
+
 
 ---
 
@@ -121,6 +172,19 @@ for (int i = 0; i < lado; i++) {
 
 ¿Qué observas en este código?
 
+ERRORES:
+Al igual que antes he utilizado snake_case erróneamente y además he escrito i++ de nuevo en vez de i = i + 1.
+Pero el error a comentar es que en vez de llamar a la variable "i", la debería poner un nombre acorde al contexto en el programa.
+
+CORRECCIÓN:
+
+for (int cantidadHabitacionesVistas = 0; cantidadHabitacionesVistas < lado; cantidadHabitacionesVistas = cantidadHabitacionesVistas + 1) {
+    boolean persianaAbierta = Math.random() < PROBABILIDAD_PERSIANA_ABIERTA;
+    boolean luzEncendida = Math.random() < PROBABILIDAD_LUZ_ENCENDIDA;
+
+Estos cambios ayudan a que el código se entienda mejor sin necesidar de usar un (prohibidísimo) comentario.
+
+
 ---
 
 ## Pregunta 8
@@ -146,5 +210,22 @@ if (i < lado - 1) fila += ":";
 ```
 
 ¿Qué observas en este código?
+
+
+ERRORES:
+
+Al igual que antes he utilizado "+=" y además he escrito i de nuevo en vez de darle un nombre acorde a la variable.
+También voy a añadir corchetes para que sea más "bonito".
+
+CORRECIÓN:
+if (cantidadHabitacionesVistas < lado - 1){
+fila = fila + ":";
+}
+
+
+
+
+
+
 
 
