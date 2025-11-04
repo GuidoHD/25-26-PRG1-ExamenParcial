@@ -66,7 +66,7 @@ for (int dia = 1; dia <= DIAS; dia++) {
 ERROR:
 He utilizado "dia++" para añadir 1 a la variable "dia".
 He fallado en lo mismo con la variable "hora".
-Lo que tendría que haber utilizado sería la expresión "a = + 1"
+Lo que tendría que haber utilizado sería la expresión "a = a + 1"
 
 
 CORRECCIÓN:
